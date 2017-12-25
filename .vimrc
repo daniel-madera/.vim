@@ -7,8 +7,9 @@ set directory^=$HOME/.vim/tmp//
 filetype on
 syntax on
 set background=dark
-colorscheme solarized
+let g:solarized_termtrans=1
 let g:solarized_termcolors=256
+colorscheme solarized
 
 set guifont=Monospace\ 11
 set lines=60 columns=95
