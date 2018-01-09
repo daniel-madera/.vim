@@ -11,10 +11,12 @@ let g:solarized_termtrans=1
 let g:solarized_termcolors=256
 colorscheme solarized
 
-set guifont=Monospace\ 11
-set lines=60 columns=95
-autocmd VimLeave * :!printf '\e[8;24;80t' & clear
-set colorcolumn=90
+set lines=50 columns=88
+autocmd VimLeave * :call OnVimLeaveTrigger()
+function OnVimLeaveTrigger()
+  !printf '\e[8;26;88t\033c'
+endfunction
+set colorcolumn=80
 set number "sets line nubers
 set showmatch
 let mapleader=" "
