@@ -7,7 +7,18 @@ sudo apt install vim vim-gtk vim-gnome
 ```
 Need vim-gtk and vim-gnome to support system clipboard.
 
-## Requirements
+Install repository to home folder
+```bash
+cd ~
+git clone --recursive git@github.com:daniel-madera/.vim.git
+```
+
+Add to **~/.vimrc**
+```vim
+:source ~/.vim/startup.vim
+```
+
+## Plugin requirements
 ```bash
 # command-t plugin
 sudo apt install ruby ruby-dev
@@ -17,4 +28,9 @@ rake make
 sudo apt-get install build-essential cmake
 sudo apt-get install python-dev python3-dev
 ~/.vim/bundle/YouCompleteMe/install.py
+```
+
+## Useful vim commands
+```vim
+:w !sudo dd of=% # saving opened buffer as root
 ```
