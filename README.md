@@ -1,13 +1,11 @@
 # .vim
 Vim settings and modules
 
-## Gnome terminal setup colorscheme
-https://github.com/Mayccoll/Gogh
+## Installing vim
 ```bash
-sudo apt-get install dconf-cli
-wget -O gogh https://git.io/vQgMr && chmod +x gogh && ./gogh && rm gogh
-# choose Solarized Dark (128)
+sudo apt install vim vim-gtk vim-gnome
 ```
+Need vim-gtk and vim-gnome to support system clipboard.
 
 ## Requirements
 ```bash
