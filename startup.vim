@@ -7,20 +7,18 @@ set directory^=$HOME/.vim/tmp//
 filetype on
 syntax on
 set background=dark
-let g:solarized_termtrans=1
-let g:solarized_termcolors=256
 colorscheme solarized
+set cursorline
+set ttymouse=xterm2
 
 set lines=50 columns=88
-autocmd VimLeave * :call OnVimLeaveTrigger()
-function OnVimLeaveTrigger()
-  !printf '\e[8;26;88t\033c'
-endfunction
+autocmd VimLeave * :!printf '\e[8;26;88t\033c'
+
 set colorcolumn=80
 set number
 set clipboard=unnamed
 set showmatch
-let mapleader=" "
+let mapleader = " "
 cmap w!! %!sudo tee > /dev/null %
 map <leader>s :source ~/.vimrc<CR>
 map <leader>e :e ++enc=cp1250<CR>
@@ -30,7 +28,7 @@ set history=100
 
 "indenting
 filetype indent on
-"set nowrap
+set nowrap
 set tabstop=2
 set shiftwidth=2
 set expandtab
@@ -46,17 +44,20 @@ autocmd BufWritePre * :%s/\s\+$//e
 
 "plugin Lightline fix
 set laststatus=2
+let g:lightline = { 'colorscheme': 'solarized' }
+set noshowmode
 
 "plugin CommandT ignore files
-set wildignore+=*.cache,*.swp,node_modules
-"set hlsearch
+set wildignore+=*.cache,*.swp,node_modules,*.png,*.jpg,*.svg
+let g:CommandTTraverseSCM = 'pwd'
+set hlsearch
 
 "plugin NerdCommenter
 filetype plugin on
 
 "plugin VimJsx
-let g:jsx_ext_required=0 " Allow JSX in normal JS files
-let g:javascript_plugin_flow=1
+let g:jsx_ext_required = 0 " Allow JSX in normal JS files
+let g:javascript_plugin_flow = 1
 
 "remap to arrow keys
 "map <D-A-RIGHT> <C-w>l
