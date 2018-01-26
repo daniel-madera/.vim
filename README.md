@@ -20,6 +20,9 @@ Add to **~/.vimrc**
 
 ## Plugin requirements
 ```bash
+# lightline plugin
+sudo apt-get install python3-pip
+pip3 install --user powerline-status
 # command-t plugin
 sudo apt install ruby ruby-dev
 cd  ~/.vim/bundle/command-t
