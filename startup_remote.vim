@@ -7,7 +7,6 @@ set directory^=$HOME/.vim/tmp//
 filetype on
 syntax on
 set background=dark
-colorscheme solarized
 set cursorline
 set ttymouse=xterm2
 
