@@ -12,7 +12,7 @@ set cursorline
 set ttymouse=xterm2
 
 set lines=50 columns=88
-autocmd VimLeave * :!printf '\e[8;26;88t\033c'
+autocmd VimLeave * :!printf '\e[8;26;88t'
 
 set colorcolumn=80
 set number
