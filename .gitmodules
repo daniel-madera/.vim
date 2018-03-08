@@ -34,7 +34,3 @@
 [submodule "bundle/vim-closetag"]
   path = bundle/vim-closetag
   url = https://github.com/alvan/vim-closetag.git
-[submodule "bundle/lightline.vim"]
-  path = bundle/lightline.vim
-  url = https://github.com/itchyny/lightline.vim.git
-
