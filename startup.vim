@@ -41,7 +41,7 @@ autocmd FileType python setlocal expandtab shiftwidth=4 softtabstop=4
 "autoindent on save
 augroup autoindent
   au!
-  autocmd BufWritePre * :normal migg=G`i
+  autocmd BufWritePre *.\(\html\|css\|scss\|js\|jsx\|php\|py\) :normal migg=G`i
 augroup End
 
 "remove whitepaces on save
