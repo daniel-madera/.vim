@@ -57,7 +57,7 @@ python3 powerline_setup()
 python3 del powerline_setup
 
 "plugin CommandT ignore files
-set wildignore+=*.cache,*.swp,node_modules,*.png,*.jpg,*.svg,*.map,assets
+set wildignore+=*.cache,*.swp,node_modules,*.png,*.jpg,*.svg,*.map,assets,*.bak
 let g:CommandTTraverseSCM='pwd'
 set hlsearch
 
