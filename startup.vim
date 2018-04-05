@@ -27,7 +27,7 @@ set history=100
 
 "indenting
 filetype indent on
-set nowrap
+set wrap
 set tabstop=2
 set shiftwidth=2
 set expandtab
