@@ -11,13 +11,13 @@ colorscheme solarized
 set cursorline
 set colorcolumn=80
 set number
-set clipboard=unnamed
+set clipboard=unnamedplus
 set history=100
 
 "shortcuts
 let mapleader=" "
 map <leader>e :e ++enc=cp1250<CR>
-map <leader>i :normal gg=G``zz
+map <leader>i :normal gg=G``zz<CR>
 
 "indenting
 filetype indent on
