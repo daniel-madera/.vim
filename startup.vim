@@ -18,6 +18,8 @@ set history=100
 let mapleader=" "
 map <leader>e :e ++enc=cp1250<CR>
 map <leader>i :normal gg=G``zz<CR>
+map <leader>d :NERDTreeToggle<CR>
+map <leader>f :NERDTreeFocus<CR>
 
 "indenting
 filetype indent on
@@ -37,14 +39,18 @@ cmap w!! %!sudo tee > /dev/null %
 "remove whitepaces on save
 autocmd BufWritePre * :%s/\s\+$//e
 
+"open NERDTree automaticaly if no file is specified
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+
 "plugin Lightline fix
 set laststatus=2
 let g:lightline={ 'colorscheme': 'solarized' }
 set noshowmode
 let g:powerline_pycmd='python3'
-python3 from powerline.vim import setup as powerline_setup
-python3 powerline_setup()
-python3 del powerline_setup
+"python3 from powerline.vim import setup as powerline_setup
+"python3 powerline_setup()
+"python3 del powerline_setup
 
 "plugin command-t ignore files
 set wildignore+=*.cache,*.swp,node_modules,*.png,*.jpg,*.svg,*.map,assets,*.bak

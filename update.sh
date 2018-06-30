@@ -15,4 +15,4 @@ git submodule update --init --recursive
 echo ":source /home/$USER/.vim/startup.vim" > ~/.vimrc
 
 # set up VIM plugins
-pip install --user powerline-status
+#pip3 install --user wheel powerline-status
