@@ -1,9 +1,6 @@
 [submodule "bundle/lightline"]
   path = bundle/lightline
   url = https://github.com/itchyny/lightline.vim.git
-[submodule "bundle/command-t"]
-  path = bundle/command-t
-  url = https://github.com/wincent/command-t.git
 [submodule "bundle/vim-colors-solarized"]
   path = bundle/vim-colors-solarized
   url = git://github.com/altercation/vim-colors-solarized.git
@@ -19,9 +16,6 @@
 [submodule "bundle/vim-jsx-pretty"]
   path = bundle/vim-jsx-pretty
   url = https://github.com/MaxMEllon/vim-jsx-pretty.git
-[submodule "bundle/YouCompleteMe"]
-  path = bundle/YouCompleteMe
-  url = https://github.com/Valloric/YouCompleteMe.git
 [submodule "bundle/vim-closetag"]
   path = bundle/vim-closetag
   url = https://github.com/alvan/vim-closetag.git

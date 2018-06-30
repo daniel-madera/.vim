@@ -15,8 +15,4 @@ git submodule update --init --recursive
 echo ":source /home/$USER/.vim/startup.vim" > ~/.vimrc
 
 # set up VIM plugins
-~/.vim/bundle/YouCompleteMe/install.py
 pip install --user powerline-status
-cd  ~/.vim/bundle/command-t
-rake make
-
